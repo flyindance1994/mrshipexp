@@ -1,3 +1,4 @@
+<app-header></app-header>
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
@@ -13,7 +14,9 @@
   <br/>
   <br/>
   <button (click)="add()">add</button>
+
   <ul>
     <li *ngFor="let item of msgList">{{item}}</li>
   </ul>
+  <app-myself></app-myself>
 </div>
