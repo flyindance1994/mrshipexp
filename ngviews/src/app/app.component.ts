@@ -9,12 +9,5 @@ export class AppComponent implements OnInit{
   title = 'angular';
   constructor(){}
 
-  msg:string="hello angular2";
-  msgList:string[]=['angular1','angular2','angular4'];
-
   ngOnInit(){}
-
-  add(){
-    this.msgList.push('angular');
-  }
 }

@@ -11,7 +11,14 @@ import {CodeComponent} from './code/code.component';
 import {LocationStrategy, HashLocationStrategy} from "@angular/common";
 
 const appRoutes: Routes = [
-  {path: 'code', component: CodeComponent},
+  {
+    path: '',
+    component: MyselfComponent
+  },
+  {
+    path: 'code',
+    component: CodeComponent
+  },
 ];
 
 @NgModule({
@@ -37,7 +44,9 @@ const appRoutes: Routes = [
     useClass: HashLocationStrategy
   }],
   bootstrap: [AppComponent],
-  exports: []
+  exports: [
+    RouterModule
+  ]
 })
 export class AppModule {
 }
