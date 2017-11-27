@@ -9,6 +9,7 @@ import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {CodeComponent} from './code/code.component';
 import {LocationStrategy, HashLocationStrategy} from "@angular/common";
+import { PhotoComponent } from './photo/photo.component';
 
 const appRoutes: Routes = [
   {
@@ -19,6 +20,10 @@ const appRoutes: Routes = [
     path: 'code',
     component: CodeComponent
   },
+  {
+    path: 'photo',
+    component: PhotoComponent
+  },
 ];
 
 @NgModule({
@@ -27,7 +32,8 @@ const appRoutes: Routes = [
     MyselfComponent,
     HeaderComponent,
     FooterComponent,
-    CodeComponent
+    CodeComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,
